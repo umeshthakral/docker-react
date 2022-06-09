@@ -1,0 +1,5 @@
+FROM node as buildS
+WORKDIR /usr/local/app
+COPY ./ /usr/local/app/
+RUN npm install
+COPY . .
